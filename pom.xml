@@ -112,7 +112,8 @@
               <outputDirectory>src/main/java</outputDirectory>
               <includes>
                 <include>com/joestelmach/natty/generated/DateLexer.g</include> 
-                <include>com/joestelmach/natty/generated/DateParser.g</include> 
+                <include>com/joestelmach/natty/generated/DateParser.g</include>
+                <include>com/joestelmach/natty/generated/DateWalker.g</include>
               </includes>
               <excludes>
                 <exclude>com/joestelmach/natty/generated/imports/NumericRules.g</exclude> 
@@ -129,10 +130,13 @@
               <debug>false</debug>
               <outputDirectory>src/main/java</outputDirectory>
               <libDirectory>src/main/antlr3/com/joestelmach/natty/generated/imports</libDirectory>
+              <includes>
+                <include>com/joestelmach/natty/generated/DateLexer.g</include>
+                <include>com/joestelmach/natty/generated/DateParser.g</include>
+                <include>com/joestelmach/natty/generated/DateWalker.g</include>
+              </includes>
               <excludes>
-                <exclude>com/joestelmach/natty/generated/DateLexer.g</exclude> 
-                <exclude>com/joestelmach/natty/generated/DateParser.g</exclude> 
-                <exclude>com/joestelmach/natty/generated/imports/NumericRules.g</exclude> 
+                <exclude>com/joestelmach/natty/generated/imports/NumericRules.g</exclude>
               </excludes>
             </configuration>
           </execution>
